@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: antiquewhite;
+}
+div{
+    width: 200px;
+    height: 200px;
+}
+main{
+    display: flex;
+}
+.headings{
+    text-align: center;
+}
+
+#box1{
+    background-color: rgb(62, 255, 4);
+}
+#box2{
+    background-color: rgb(213, 83, 28);
+}
+#box3{
+    background-color: rgb(183, 42, 205);
+}

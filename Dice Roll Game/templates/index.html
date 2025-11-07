@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='script.js') }}" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h2>🎲 Dice Roll Game</h2>
+      <div class="dice" id="dice">?</div>
+      <button onclick="rollDice()">Roll Dice</button>
+      <div class="score-container">
+        <div class="score">Current Roll: <span id="current">-</span></div>
+        <div class="score">Total Score: <span id="total">0</span></div>
+        <div class="score">Rolls Count: <span id="count">0</span></div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

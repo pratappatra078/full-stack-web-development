@@ -1,0 +1,180 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body { 
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+.texts{
+    color: black;
+    font-size: large;
+}
+.texts:hover{
+  color:rgb(107, 187, 219);
+}
+#askBox{
+  display: flex;
+  padding: 15px;
+  border: 2px solid blue;
+  border-radius: 3px;
+  height: 30px;
+
+}
+#contactDetails{
+  margin-left: 40px;
+  text-align: center;
+  justify-content: center;
+  font-weight:lighter;
+}
+
+#header {
+  height: 12vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+#fakeHeader{
+   height: 12vh;
+   width: 100%;
+}
+
+#page1 {
+  height: 87%;
+  width: 100%;
+  background-color: white;
+}
+
+#page2 {
+  height: 90vh;
+  width: 100vw;
+}
+
+#logo {
+  height: 70%;
+}
+
+#logo img {
+  height: 50px;
+  width: 100px;
+}
+.icon{
+  
+  padding: 15px;
+  border-radius: 50%;
+}
+.icon:hover{
+  background-color: rgb(107, 187, 219);
+}
+#login{
+  padding: 10px;
+  display: flex;
+  background-color: skyblue;
+  border-radius: 50px;
+}
+#login:hover{
+  background-color: rgb(107, 187, 219);
+}
+#try{
+  background-color: green;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+#try:hover{
+  background-color: rgb(57, 161, 41);
+}
+
+#strip{
+  height: 7%;
+  width: 100%;
+  background-color: rgb(0, 0, 120);
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
+#strip u{
+  margin-left: 20px;
+}
+#content{
+  height: 87%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#box1{
+  height: 100%;
+  width: 47%;
+  background-color: white;
+  padding: 20px;
+}
+#box1 h1{
+  padding: 20px;
+  font-weight: 1000;
+  font-size-adjust: 1;
+}
+#box1 p{
+  padding: 30px;
+  font-size: 25px;
+}
+#box2{
+  height: 100%;
+  width: 47%;
+}
+#btns{
+  display: flex;
+  margin-left: 16px;
+}
+#btn1{
+  text-align: center;
+  padding: 10px 20px;
+  background-color: rgb(10, 160, 210);
+  color: white;
+  border: 1px solid blue;
+  border-radius: 6px;
+  margin: 10px;
+}
+#btn1:hover{
+  background-color: rgb(0, 27, 115);
+  border: 1px solid black;
+}
+#btn2{
+  text-align: center;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+  border-color:  lightblue;
+}
+#btn2:hover{
+  background-color: skyblue;
+}
+
+#headline{
+  width: 100%;
+  height: 18%;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  background-color: white;
+}
+#headline h1{
+  font-weight: 1000;
+}
