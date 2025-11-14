@@ -1,0 +1,11 @@
+API KEY
+
+8020974159:AAFynSHpQ0YeoUCT5JWrOQFNiXylvqcWpYk
+
+chat id 
+
+6731843281
+
+
+{"ok":true,"result":[{"update_id":412623820,
+"message":{"message_id":1,"from":{"id":6731843281,"is_bot":false,"first_name":"P","language_code":"en"},"chat":{"id":6731843281,"first_name":"P","type":"private"},"date":1752123097,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}
