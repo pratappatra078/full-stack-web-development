@@ -1,0 +1,29 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cred{
+    color: red;
+}
+.cblue{
+    color: blue;
+}
+.cyellow{
+    color: yellow ;
+}
+/*if use '!important' word then that will apply without checking other */
+.cgreen{
+    color: green;
+}
+h1{
+    color:salmon ;
+}
+#order{
+    color: rgb(99, 112, 245);
+    font-size: x-large;
+}
+[data-x='a']{
+    color:crimson;
+}
+.important_list{
+    color: green;
+}
