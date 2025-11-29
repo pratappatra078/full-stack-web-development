@@ -1,0 +1,19 @@
+.box {
+  text-align: center;
+  font-size: xx-large;
+  color: green;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 2px #c5ecb1;
+  background-color: #ffffff;
+}
+.headline {
+  text-align: left;
+  font-size: x-large;
+  padding: 8px 2px 0px 2px;
+  text-align: left;
+}
+.text-element {
+  text-shadow: 10px 6px 4px #ba84e2;
+}

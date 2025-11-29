@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="box">Computer Organization & Architecture</div>
+    <div class="headline">
+        Some Basic Questions and Answer for Semester 
+    </div>
+    <p class="text-element">
+      1. What are the main components of a CPU? (2 marks) 
+      Ans:A CPU (Central
+      Processing Unit) has three main components: ● Arithmetic Logic Unit (ALU):
+      Performs all arithmetic (add, subtract) and logical (AND, OR, NOT)
+      operations. ● Control Unit (CU): Directs the operation of the processor by
+      generating control and timing signals. ● Registers: Small, high-speed
+      storage locations used to hold data and instructions temporarily. 2. State
+      the function of the Program Counter (PC) and the Instruction Register
+      (IR). (2 marks) ● The Program Counter (PC) holds the memory address of the
+      next instruction to be fetched for execution. ● The Instruction Register
+      (IR) holds the current instruction that has been fetched and is being
+      decoded and executed. 3. Differentiate between MAR and MDR. (2 marks) The
+      Memory Address Register (MAR) holds the memory address of the location to
+      be accessed (read from or written to). The Memory Data Register (MDR)
+      holds the actual data that is being transferred to or from that memory
+      location. 4. What is an Instruction Set Architecture (ISA)? (2 marks) An
+      ISA is the part of the computer architecture that is visible to the
+      programmer. It acts as the interface between the hardware and the
+      software, defining the set of all instructions, registers, addressing
+      modes, and data types that the processor can execute. 5. Explain the Fetch
+      cycle using Register Transfer Language (RTL). (3 marks) The Fetch cycle
+      retrieves an instruction from memory. The steps in RTL are: ● T0 :MAR←[PC]
+      (Copy PC content to MAR) ● T1 :MDR←M[MAR],PC←[PC]+1 (Fetch from memory,
+      increment PC) ● T2 :IR←[MDR] (Move instruction to IR)
+    </p>
+  </body>
+</html>
