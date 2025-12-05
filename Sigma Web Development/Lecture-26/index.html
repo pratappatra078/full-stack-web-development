@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow</title>
+    <style>
+      .box {
+        height: 20vh;
+        width: 20vw;
+        border: 2px solid black;
+        overflow: auto;
+        /* white-space: nowrap; */
+        /* text-overflow: ellipsis; */
+        /* overflow-y: scroll;
+            overflow-x: hidden; */
+        overflow: hidden auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      CSS overflow is a property used to control how extra content is handled
+      when it exceeds the size of its container. By default, overflow is
+      visible, meaning content spills outside the box. It can be set to hidden
+      to clip the extra part, scroll to always show scrollbars, or auto to
+      display scrollbars only when needed. This property helps maintain clean
+      layouts, prevents content from breaking design structure, and improves
+      user experience when handling large or overflowing elements.
+    </div>
+  </body>
+</html>
