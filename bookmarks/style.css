@@ -11,7 +11,7 @@ html,body {
   width: 100%;
   align-items: center;
   padding: 10px;
-  background-color: #ace8e8;
+  background: rgba(236, 246, 255, 1);
 }
 .container h1 {
   align-items: center;
