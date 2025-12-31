@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  background-color: #ace8e8;
+}
+.container h1 {
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  height: 10vh;
+}
+.my-profiles{
+    height: 100%;
+    padding: 0 30px;
+}
+.profile-icon {
+  margin: 10px;
+  padding: 20px;
+  height: 90px;
+  width: 90px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.profile-icon{
+    transition: transform 0.25s ease,box-shadow 0.25s ease;
+}
+.profile-icon:hover{
+    transform: scale(1.25);
+    box-shadow: 0 6px 14px rgb(0, 0, 0);
+}
