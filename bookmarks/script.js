@@ -21,3 +21,12 @@ document.querySelectorAll(".profile-item, .bookmarks-item").forEach(icon =>{
         icon.style.boxShadow = "none";
     })
 })
+const togglebtn = document.getElementById("theme-toggle");
+togglebtn.addEventListener("click",() =>{
+    document.body.classList.toggle("night");
+    if(document.body.classList.contains("night")){
+        togglebtn.textContent = "☀️ Day Mode";
+    }else{
+        togglebtn.textContent = "🌙 Night Mode";
+    }
+});

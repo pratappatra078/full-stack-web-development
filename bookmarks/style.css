@@ -2,22 +2,46 @@
   padding: 0;
   margin: 0;
 }
+/* for day mode by default */
 html,body {
   height: 100%;
   width: 100%;
+  background: rgba(236, 246, 255, 1);
+  color: rgba(20,20,20,1);
+  transition: background 0.3s ease ,color 0.3s ease;
+}
+body.night{
+    background: rgb(33, 60, 104);
+    color: rgba(230,230,230,1);
+}
+body.night .container h1{
+    color: black;
+}
+#theme-toggle{
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    font-size: 14px;
 }
 .container {
   height: 100%;
   width: 100%;
   align-items: center;
   padding: 10px;
-  background: rgba(236, 246, 255, 1);
 }
 .container h1 {
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-  height: 10vh;
+    height: 48px;
+    width: 350px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #92ddf4;
 }
 .my-profiles{
     height: 100%;
@@ -31,10 +55,17 @@ html,body {
   border: 2px solid black;
   border-radius: 15px;
 }
-.profile-icon{
+.profile-icon {
     transition: transform 0.25s ease,box-shadow 0.25s ease;
 }
 .profile-icon:hover{
+    transform: scale(1.25);
+    box-shadow: 0 6px 14px rgb(0, 0, 0);
+}
+.heading{
+    transition: transform 0.35s ease,box-shadow 0.35s ease;
+}
+.heading:hover{
     transform: scale(1.25);
     box-shadow: 0 6px 14px rgb(0, 0, 0);
 }
