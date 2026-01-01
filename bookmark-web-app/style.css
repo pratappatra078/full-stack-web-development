@@ -6,57 +6,91 @@
 html,body {
   height: 100%;
   width: 100%;
-  background: rgba(236, 246, 255, 1);
-  color: rgba(20,20,20,1);
-  transition: background 0.3s ease ,color 0.3s ease;
 }
-body.night{
-    background: rgb(33, 60, 104);
-    color: rgba(230,230,230,1);
+/*----------------all color set ----------------------------*/
+/* -----------day------------ */
+:root{
+    --bg-main:#eef6fb;
+    --card-bg:#e3edf3;
+    --border-color: #1f2933;   
+    --text-main: #1f2933;      
+    --title-bg: #d7eaf5;       
+    --btn-bg: #dbeafe;
 }
+/* ----------night--------- */
+body.night {
+  --bg-main: #0f172a;        
+  --card-bg: #1e293b;        
+  --border-color: #94a3b8;   
+  --text-main: #e5e7eb;      
+  --title-bg: #1e293b;       
+  --btn-bg: #334155;         
+}
+/*--------------------------------------------*/
 body.night .container h1{
-    color: black;
+    background-color: var(--title-bg);
+    color: var(--text-main);
 }
+body.night .container {
+  background: var(--bg-main);
+}
+body.night .profile-icon{
+    background-color:var(--card-bg);
+}
+body.night #theme-toggle{
+    background-color: var(--card-bg);
+    color: var(--text-main);
+}
+/*-----------all day mode---------------------*/
 #theme-toggle{
-    position: fixed;
-    top: 12px;
-    right: 12px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
     padding: 8px 14px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: rgba(0,0,0,0.1);
+    background: var(--btn-bg);
     font-size: 14px;
+    transition: transform 0.25s ease-in-out,box-shadow 0.25s ease-in-out;
 }
 .container {
   height: 100%;
   width: 100%;
   align-items: center;
   padding: 10px;
+  background: var(--bg-main);
+  transition: background 0.3s ease;
 }
 .container h1 {
     height: 48px;
     width: 350px;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     border-radius: 10px;
-    background-color: #92ddf4;
+    background-color: var(--title-bg);
 }
 .my-profiles{
     height: 100%;
     padding: 0 30px;
+    justify-content: center;
 }
 .profile-icon {
+  background-color: var(--btn-bg);
   margin: 10px;
   padding: 20px;
   height: 90px;
   width: 90px;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 15px;
+  transition: transform 0.25s ease,box-shadow 0.25s ease;
+  justify-items: center;
 }
-.profile-icon {
-    transition: transform 0.25s ease,box-shadow 0.25s ease;
+/* -------------------------------all hover------------------------------ */
+#theme-toggle:hover{
+    transform: scale(1.25);
+    box-shadow: 0 6px 14px rgb(0, 0, 0);
 }
 .profile-icon:hover{
     transform: scale(1.25);
@@ -68,4 +102,20 @@ body.night .container h1{
 .heading:hover{
     transform: scale(1.25);
     box-shadow: 0 6px 14px rgb(0, 0, 0);
+}
+/* -----------------------------------for smartphone------------------------------- */
+@media (max-width: 768px){
+    #theme-toggle .text{
+        display: none;
+    }
+    #theme-toggle{
+        top: 28px;
+        margin-right: 5%;
+    }
+    .container h1{
+        width: 50vw;
+        font-size: 16px;
+        height: 4vh;
+        margin-top: 200px;
+    }
 }

@@ -10,9 +10,15 @@
     "w3school":"https://www.w3schools.com",
     "geeksforgeeks":"https://www.geeksforgeeks.org",
     "youtube":"https://www.youtube.com",
-    "getbootstrap":"https://www.getbootstrap.com",
+    "bootstrap":"https://www.getbootstrap.com",
     "wikipedia":"https://www.wikipedia.org/",
     "amazon":"https://www.amazon.com/",
     "chatgpt":"https://chatgpt.com/",
-    "pinterest":"https://in.pinterest.com/"
+    "pinterest":"https://in.pinterest.com/",
+    "stackoverflow":"https://stackoverflow.com/users/32128647/pratap-patra",
+    "gemini":"https://gemini.google.com/app?hl=en-IN",
+    "speedtest":"https://www.speedtest.net/",
+    "claudai":"https://claude.ai/new",
+    "translate":"https://translate.google.com/?sl=auto&tl=bn&op=translate",
+    "flipkart":"https://www.flipkart.com/"
 }

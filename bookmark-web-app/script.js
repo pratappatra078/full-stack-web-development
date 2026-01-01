@@ -1,3 +1,4 @@
+// for fetching links from json
 fetch("links.json")
     .then(Response => Response.json())
     .then(links =>{
@@ -11,22 +12,32 @@ fetch("links.json")
     })
     .catch(error => console.error("Error loading links ",error));
 
-document.querySelectorAll(".profile-item, .bookmarks-item").forEach(icon =>{
-    icon.addEventListener("mouseenter",()=>{
-        icon.style.transform = "scale(1.1)";
-        icon.style.boxshadow = "0 6px 14px rgba(0,0,0,0.3)";
-    })
-    icon.addEventListener("mouseleave",()=>{
-        icon.style.transform = "scale(1)";
-        icon.style.boxShadow = "none";
-    })
-})
-const togglebtn = document.getElementById("theme-toggle");
-togglebtn.addEventListener("click",() =>{
-    document.body.classList.toggle("night");
-    if(document.body.classList.contains("night")){
-        togglebtn.textContent = "☀️ Day Mode";
+// this function is for changing name => icon in smartphone
+const togglebtn =document.getElementById("theme-toggle");
+const textSpan = togglebtn.querySelector(".text");
+const iconSpan = togglebtn.querySelector(".icon");
+
+function updateButton(){
+    const isNight =document.body.classList.contains("night");
+    if(window.innerWidth <= 768 ){
+        iconSpan.textContent = isNight ? "☀️" : "🌙";
     }else{
-        togglebtn.textContent = "🌙 Night Mode";
+        textSpan.textContent = isNight ? " Day Mode" : " Night Mode";
     }
+}
+
+//toggle theme
+togglebtn.addEventListener("click",()=>{
+    document.body.classList.toggle("night");
+    updateButton();
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("night")? "night":"day"
+    );
 });
+//load saved theme from browser
+if(localStorage.getItem("theme")==="night"){
+    document.body.classList.add("night");
+}
+updateButton();
+window.addEventListener("resize",updateButton)
